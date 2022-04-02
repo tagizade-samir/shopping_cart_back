@@ -4,6 +4,7 @@ const data = require('../data');
 
 router.get('/', function (req, res) {
 	const categories = data.categories;
+	res.header("Access-Control-Allow-Origin", "*");
 	res.send(categories);
 });
 

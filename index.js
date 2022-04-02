@@ -11,5 +11,5 @@ var httpServer = http.createServer(app);
 httpServer.listen(port, onListening);
 
 function onListening() {
-	console.log('LISTENING ON: 3000');
+	console.log('LISTENING ON: ' + port);
 }
