@@ -24,6 +24,7 @@ router.get('/:name', function (req, res) {
 			...product,
 			image_url: images[product.sub_category_id]
 		}));
+		res.header("Access-Control-Allow-Origin", "*");
 		res.status(200).send({
 			sub_categories,
 			products
